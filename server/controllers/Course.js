@@ -6,6 +6,8 @@ const SubSection = require("../models/Subsection");
 const { uploadImageToCloudinary } = require("../utils/imageUploader");
 const CourseProgress = require("../models/CourseProgress");
 const { convertSecondsToDuration } = require("../utils/secToDuration");
+const redisClient = require('../config/redis');
+
 
 // Function to create a new course
 exports.createCourse = async (req, res) => {
@@ -116,6 +118,7 @@ exports.createCourse = async (req, res) => {
       { new: true }
     );
     console.log("HEREEEEEEEE", categoryDetails2);
+    await redisClient.del('allCourses');
     // Return the new course and a success message
     res.status(200).json({
       success: true,
@@ -136,6 +139,18 @@ exports.createCourse = async (req, res) => {
 //getAllCourses handler function
 exports.showAllCourses = async (req, res) => {
   try {
+
+    const cachedCourses=await redisClient.get("allCourses"); 
+
+    if(cachedCourses)
+    {
+      res.json({
+        success: true,
+            message: 'Data fetched from Redis',
+            data: JSON.parse(cachedCourses),
+      });
+    }
+
     const allCourses = await Course.find(
       { status: "Published" },
       {
@@ -149,6 +164,9 @@ exports.showAllCourses = async (req, res) => {
     )
       .populate("instructor")
       .exec();
+
+    await redisClient.setex('allCourses',3600,JSON.stringify(allCourses)); 
+
     return res.status(200).json({
       success: true,
       message: "Data for all Courses fetched successfully",
@@ -276,7 +294,7 @@ exports.editCourse = async (req, res) => {
         },
       })
       .exec();
-
+await redisClient.del('allCourses');
     res.json({
       success: true,
       message: "Course updated successfully",
@@ -466,7 +484,7 @@ exports.deleteCourse = async (req, res) => {
 
     // Delete the course
     await Course.findByIdAndDelete(courseId);
-
+await redisClient.del('allCourses');
     return res.status(200).json({
       success: true,
       message: "Course deleted successfully",
