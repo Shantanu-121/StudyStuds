@@ -1,6 +1,6 @@
 # StudyStuds - EdTech Platform
 
-:rocket: [Link to website][]
+:rocket: [Link to website][https://study-studs.vercel.app/]
 
 ![Main Page](src/assets/Images/Main.png)
 StudyStuds is a fully functional EdTech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
@@ -38,7 +38,6 @@ For Students:
 
 - **Homepage:** A brief introduction to the platform with links to the course list and user details.
 - **Course List:** A list of all the courses available on the platform, along with their descriptions and ratings.
-- **Wishlist:** Displays all the courses that a student has added to their wishlist.
 - **Cart Checkout:** Allows the user to complete course purchases.
 - **Course Content:** Presents the course content for a particular course, including videos and related material.
 - **User Details:** Provides details about the student's account, including their name, email, and other relevant information.
