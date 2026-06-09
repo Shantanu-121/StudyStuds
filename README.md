@@ -70,13 +70,14 @@ The back-end of the platform is built using NodeJS and ExpressJS, providing APIs
 
 The back-end of StudyStuds uses various frameworks, libraries, and tools to ensure its functionality and performance, including:
 
+- **Docker:** Used to containerize the back-end infrastructure, ensuring absolute environment parity across local development and production deployments.
 - **Node.js:** Used as the primary framework for the back-end.
 - **Express.js:** Used as a web application framework, providing a range of features and tools for building web applications.
 - **MongoDB:** Used as the primary database, providing a flexible and scalable data storage solution.
 - **JWT (JSON Web Tokens):** Used for authentication and authorization, providing a secure and reliable way to manage user credentials.
 - **Bcrypt:** Used for password hashing, adding an extra layer of security to user data.
 - **Mongoose:** Used as an Object Data Modeling (ODM) library, providing a way to interact with MongoDB using JavaScript.
-- **Redis:** For caching purposes.
+- **Redis:** Used as an in-memory data store for caching high-traffic API responses and managing temporary data.
 
 #### Data Models and Database Schema
 
