@@ -1,6 +1,6 @@
 # StudyStuds - EdTech Platform
 
-:rocket: [Link to website][https://study-studs.vercel.app/]
+:rocket: [https://study-studs.vercel.app/]
 
 ![Main Page](src/assets/Images/Main.png)
 StudyStuds is a fully functional EdTech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
@@ -76,6 +76,7 @@ The back-end of StudyStuds uses various frameworks, libraries, and tools to ensu
 - **JWT (JSON Web Tokens):** Used for authentication and authorization, providing a secure and reliable way to manage user credentials.
 - **Bcrypt:** Used for password hashing, adding an extra layer of security to user data.
 - **Mongoose:** Used as an Object Data Modeling (ODM) library, providing a way to interact with MongoDB using JavaScript.
+- **Redis:** For caching purposes.
 
 #### Data Models and Database Schema
 
