@@ -5,8 +5,9 @@
 </p>
 
 <p align="center">
-A production-ready EdTech platform built with the MERN stack that enables instructors to create, manage and sell courses while providing students with an engaging learning experience.
-</p>
+StudyStuds is a scalable full-stack EdTech platform where instructors can create and publish courses while students can browse, purchase and consume educational content.
+
+The application follows a modern client-server architecture with secure authentication, media storage, payment processing, analytics, caching and containerized deployment.</p>
 
 <p align="center">
 
