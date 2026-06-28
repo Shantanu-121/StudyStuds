@@ -49,6 +49,18 @@ StudyStuds is a scalable full-stack EdTech platform where instructors can create
 ---
 
 
+## ✨ Recent Improvements
+
+- 🔷 Migrated the complete project from **JavaScript → TypeScript**
+- 🐳 Dockerized backend
+- ⚡ Redis caching
+- 🔒 JWT Authentication
+- ☁️ Cloudinary integration
+- 💳 Razorpay payment gateway
+
+---
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
