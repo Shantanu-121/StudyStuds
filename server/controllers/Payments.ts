@@ -51,7 +51,7 @@ exports.capturePayment = async (req, res) => {
   const options = {
     amount: totalAmount * 100,
     currency,
-    receipt: Math.random(Date.now()).toString(),
+    receipt: `${Date.now()}-${Math.random()}`,
   };
 
   try {
@@ -143,7 +143,7 @@ const enrollStudents = async (courses, userId, res) => {
 
       ///bachhe ko mail send kardo
       const emailResponse = await mailSender(
-        enrollStudents.email,
+        enrolledStudent.email,
         `Successfully Enrolled into ${enrolledCourse.courseName}`,
         courseEnrollmentEmail(
           enrolledCourse.courseName,

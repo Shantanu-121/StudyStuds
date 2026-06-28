@@ -1,9 +1,11 @@
+const dotenv = require("dotenv");
+dotenv.config();
+
 const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
-const dotenv = require("dotenv");
 
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
@@ -14,8 +16,9 @@ const contactUsRoute = require("./routes/Contact");
 const { cloudinaryConnect } = require("./config/cloudinary");
 const database = require("./config/database");
 
-dotenv.config();
 const PORT = process.env.PORT || 4000;
+
+console.log("Redis URL: " + process.env.REDIS_URL); 
 
 //database connect
 database.connect();
