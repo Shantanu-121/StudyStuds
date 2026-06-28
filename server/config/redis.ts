@@ -1,8 +1,5 @@
 const Redis = require('ioredis');
 const redisClient = new Redis(process.env.REDIS_URL, {
-    tls: {
-        rejectUnauthorized: false
-    },
     family: 4, 
     enableReadyCheck: false 
 });
