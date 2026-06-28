@@ -1,10 +1,32 @@
-# StudyStuds - EdTech Platform
+# 🎓 StudyStuds - Full Stack EdTech Platform
 
-:rocket: [https://study-studs.vercel.app/]
+<p align="center">
+  <img src="src/assets/Images/Main.png" alt="StudyStuds Banner" width="100%">
+</p>
 
-![Main Page](src/assets/Images/Main.png)
-StudyStuds is a fully functional EdTech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
+<p align="center">
+A production-ready EdTech platform built with the MERN stack that enables instructors to create, manage and sell courses while providing students with an engaging learning experience.
+</p>
 
+<p align="center">
+
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-Backend-000000?logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+</p>
+
+---
+
+## 🚀 Live Demo
+
+**https://study-studs.vercel.app/**
+
+---
 ## Table of Contents
 
 - [Introduction](#introduction)
