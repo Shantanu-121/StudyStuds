@@ -1,145 +1,287 @@
-# StudyStuds - EdTech Platform
+# 🎓 StudyStuds - Full Stack EdTech Platform
 
-:rocket: [https://study-studs.vercel.app/]
+<p align="center">
+  <img src="src/assets/Images/Main.png" alt="StudyStuds Banner" width="100%">
+</p>
 
-![Main Page](src/assets/Images/Main.png)
-StudyStuds is a fully functional EdTech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
+<p align="center">
+A production-ready EdTech platform built with the MERN stack that enables instructors to create, manage and sell courses while providing students with an engaging learning experience.
+</p>
 
-## Table of Contents
+<p align="center">
 
-- [Introduction](#introduction)
-- [System Architecture](#system-architecture)
-  - [Front-end](#front-end)
-  - [Back-end](#back-end)
-  - [Database](#database)
-  - [Architecture Diagram](#architecture-diagram)
-- [API Design](#api-design)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-Backend-000000?logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
-## Introduction
+</p>
 
-StudyStuds aims to provide a seamless and interactive learning experience for students, making education more accessible and engaging. Additionally, the platform serves as a platform for instructors to showcase their expertise and connect with learners across the globe.
+---
 
-In the following sections, we will cover the technical details of the platform, including the system architecture, API design, installation, usage instructions, and potential future enhancements.
+## 🚀 Live Demo
 
-## System Architecture
+**https://study-studs.vercel.app/**
 
-The StudyStuds EdTech platform consists of three main components: the front-end, the back-end, and the database. The platform follows a client-server architecture, with the front-end serving as the client and the back-end and database serving as the server.
+---
 
-### Front-end
+# 📖 Overview
 
-The front-end of the platform is built using ReactJS, which allows for the creation of dynamic and responsive user interfaces, crucial for providing an engaging learning experience to students. The front-end communicates with the back-end using RESTful API calls.
+StudyStuds is a scalable full-stack EdTech platform where instructors can create and publish courses while students can browse, purchase and consume educational content.
 
-#### Front End Pages
+The application follows a modern client-server architecture with secure authentication, media storage, payment processing, analytics, caching and containerized deployment.
 
-For Students:
+## ✨ Recent Improvements
 
-- **Homepage:** A brief introduction to the platform with links to the course list and user details.
-- **Course List:** A list of all the courses available on the platform, along with their descriptions and ratings.
-- **Cart Checkout:** Allows the user to complete course purchases.
-- **Course Content:** Presents the course content for a particular course, including videos and related material.
-- **User Details:** Provides details about the student's account, including their name, email, and other relevant information.
-- **User Edit Details:** Allows students to edit their account details.
+- 🔷 Migrated the complete project from **JavaScript → TypeScript**
+- 🐳 Dockerized backend
+- ⚡ Redis caching
+- 🔒 JWT Authentication
+- ☁️ Cloudinary integration
+- 💳 Razorpay payment gateway
 
-For Instructors:
+---
 
-- **Dashboard:** Offers an overview of the instructor's courses, along with ratings and feedback for each course.
-- **Insights:** Provides detailed insights into the instructor's courses, including the number of views, clicks, and other relevant metrics.
-- **Course Management Pages:** Enables instructors to create, update, and delete courses, as well as manage course content and pricing.
-- **View and Edit Profile Details:** Allows instructors to view and edit their account details.
+# ✨ Features
 
-#### Front-end Tools and Libraries
+## Student
 
-To build the front-end, we use frameworks and libraries such as ReactJS, CSS, and Tailwind for styling, and Redux for state management.
+- User Registration & Login
+- OTP Email Verification
+- Forgot Password
+- Browse Courses
+- Purchase Courses
+- Course Player
+- Progress Tracking
+- Rate Courses
+- User Dashboard
+- Profile Management
 
-### Back-end
+## Instructor
 
-The back-end of the platform is built using NodeJS and ExpressJS, providing APIs for the front-end to consume. These APIs include functionalities such as user authentication, course creation, and course consumption. The back-end also handles the logic for processing and storing the course content and user data.
+- Instructor Dashboard
+- Create/Edit/Delete Courses
+- Upload Videos & Images
+- Analytics Dashboard
+- Revenue Insights
+- Profile Management
 
-#### Back-end Features
+## Security
 
-- **User Authentication and Authorization:** Students and instructors can sign up and log in to the platform using their email addresses and passwords. The platform also supports OTP (One-Time Password) verification and forgot password functionality for added security.
-- **Course Management:** Instructors can create, read, update, and delete courses, as well as manage course content and media. Students can view and rate courses.
-- **Payment Integration:** Students will purchase and enroll in courses by completing the checkout flow, followed by Razorpay integration for payment handling.
-- **Cloud-based Media Management:** StudyStuds uses Cloudinary, a cloud-based media management service, to store and manage all media content, including images, videos, and documents.
-- **Markdown Formatting:** Course content in document format is stored in Markdown format, allowing for easier display and rendering on the front-end.
+- JWT Authentication
+- Role Based Authorization
+- Password Hashing (bcrypt)
+- Protected Routes
 
-#### Back-end Frameworks, Libraries, and Tools
+---
 
-The back-end of StudyStuds uses various frameworks, libraries, and tools to ensure its functionality and performance, including:
+# 🛠 Tech Stack
 
-- **Docker:** Used to containerize the back-end infrastructure, ensuring absolute environment parity across local development and production deployments.
-- **Node.js:** Used as the primary framework for the back-end.
-- **Express.js:** Used as a web application framework, providing a range of features and tools for building web applications.
-- **MongoDB:** Used as the primary database, providing a flexible and scalable data storage solution.
-- **JWT (JSON Web Tokens):** Used for authentication and authorization, providing a secure and reliable way to manage user credentials.
-- **Bcrypt:** Used for password hashing, adding an extra layer of security to user data.
-- **Mongoose:** Used as an Object Data Modeling (ODM) library, providing a way to interact with MongoDB using JavaScript.
-- **Redis:** Used as an in-memory data store for caching high-traffic API responses and managing temporary data.
+## Frontend
 
-#### Data Models and Database Schema
+- React
+- TypeScript
+- Redux Toolkit
+- Tailwind CSS
+- React Router
+- Axios
 
-The back-end of StudyStuds uses several data models and database schemas to manage data, including:
+## Backend
 
-- **Student Schema:** Includes fields such as name, email, password, and course details for each student.
-- **Instructor Schema:** Includes fields such as name, email, password, and course details for each instructor.
-- **Course Schema:** Includes fields such as course name, description, instructor details, and media content.
+- Node.js
+- Express.js
+- TypeScript
+- MongoDB
+- Mongoose
+- Redis
+- Docker
 
-### Database
+## Third Party Services
 
-The database for the platform is built using MongoDB, a NoSQL database that provides a flexible and scalable data storage solution. MongoDB allows for the storage of unstructured and semi-structured data. The database stores the course content, user data, and other relevant information related to the platform.
+- Cloudinary
+- Razorpay
+- Nodemailer
 
-![Database Schema](src/assets/Images/Database.png)
+---
 
-### Architecture Diagram
+# 🏗 Architecture
 
-Below is a high-level diagram that illustrates the architecture of the StudyStuds EdTech platform:
+```text
+                React + TypeScript
+                       │
+                 REST APIs (Axios)
+                       │
+                Express + Node.js
+                       │
+      ┌────────────┬──────────────┐
+      │            │              │
+   MongoDB      Redis       Cloudinary
+(Database)     (Cache)     (Media)
 
-![Architecture](src/assets/Images/architecture.png)
+                 Razorpay
+                 (Payments)
+```
 
-## API Design
+---
 
-The StudyStuds platform's API is designed following the REST architectural style. The API is implemented using Node.js and Express.js. It uses JSON for data exchange and follows standard HTTP request methods such as GET, POST, PUT, and DELETE.
+# ⚡ Engineering Highlights
 
-## Installation
+- Migrated 140+ source files from JavaScript to TypeScript.
+- Role-based authentication.
+- RESTful API architecture.
+- Redis caching.
+- Dockerized backend.
+- Cloudinary media storage.
+- Razorpay payment integration.
+- Instructor analytics dashboard.
+- Responsive UI built with Tailwind CSS.
 
-1. Clone the repository: `git clone https://github.com/username/repo.git`
-2. Navigate to the project directory: `cd StudyStuds`
-3. Install dependencies: `npm install`
-4. Navigate to the server directory: `cd server`
-5. Install backend dependencies: `npm install`
+---
 
-## Configuration
+# 📂 Project Structure
 
-1. Set up a MongoDB database and obtain the connection URL.
-2. Create a `.env` file in the root directory with the following environment variables:
-   ```
-   REACT_APP_RAZORPAY_KEY = razorpay_api_key
-   REACT_APP_BASE_URL = http://localhost:4000/api/v1
-   ```
-3. Create a `.env` file in the server directory with the following environment variables:
-   ```
-   CLOUD_NAME = cloudinary_name
-   API_KEY = coudinary_API_KEY
-   API_SECRET = cloudinary_API_SECRET 
-   CORS_ORIGIN = ["http://localhost:3000"]
-   DB_URL = mongodb_cluster_url
-   PORT = 4000
-   MAIL_USER = your_mail
-   MAIL_PASS = gmail_generated_password
-   MAIL_HOST = smtp.gmail.com
-   CONTACT_MAIL = your_email
-   JWT_SECRET = jwt_secret
-   FOLDER_NAME = cloudinary_folder_name
-   RAZORPAY_KEY = razorpay_key
-   RAZORPAY_SECRET = razorpay_secret
-   ```
-## Usage
+```text
+StudyStuds
+│
+├── client
+│   ├── components
+│   ├── pages
+│   ├── redux
+│   ├── services
+│   ├── hooks
+│   └── utils
+│
+├── server
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── services
+│   └── utils
+│
+└── docker-compose.yml
+```
 
-1. Start the frontend: `npm start`
-2. Open a new terminal and navigate to the `server` directory: `cd server`
-3. Start the React development server: `npm start`
+---
 
-Access the application in your browser at `http://localhost:3000`.
+# 📸 Screenshots
+
+## Home
+
+![Home](src/assets/Images/Main.png)
+
+> Add more screenshots:
+>
+> - Dashboard
+> - Course Player
+> - Checkout
+> - Analytics
+> - Instructor Dashboard
+
+---
+
+# 🔧 Installation
+
+```bash
+git clone https://github.com/Shantanu-121/StudyStuds.git
+cd StudyStuds
+```
+
+### Install Frontend
+
+```bash
+cd client
+npm install
+```
+
+### Install Backend
+
+```bash
+cd ../server
+npm install
+```
+
+---
+
+# ⚙️ Environment Variables
+
+## Client
+
+```env
+REACT_APP_BASE_URL=
+REACT_APP_RAZORPAY_KEY=
+```
+
+## Server
+
+```env
+PORT=
+DB_URL=
+JWT_SECRET=
+
+MAIL_HOST=
+MAIL_USER=
+MAIL_PASS=
+
+CLOUD_NAME=
+API_KEY=
+API_SECRET=
+
+RAZORPAY_KEY=
+RAZORPAY_SECRET=
+
+REDIS_URL=
+```
+
+---
+
+# ▶️ Run Locally
+
+Frontend
+
+```bash
+npm run dev
+```
+
+Backend
+
+```bash
+npm run dev
+```
+
+---
+
+# 🐳 Docker
+
+```bash
+docker compose up --build
+```
+
+---
+
+# 🔮 Future Enhancements
+
+- Course Certificates
+- Wishlist
+- Discussion Forum
+- Admin Dashboard
+- Search & Filters
+- AI Course Recommendations
+- GitHub Actions CI/CD
+- Unit & Integration Testing
+
+---
+
+# 👨‍💻 Author
+
+**Shantanu Singh**
+
+- GitHub: https://github.com/Shantanu-121
+- LinkedIn: https://www.linkedin.com/in/shantanu-singh-/
+
+---
+
+⭐ **If you found this project useful, please consider giving it a star!**
