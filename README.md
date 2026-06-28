@@ -27,6 +27,29 @@ A production-ready EdTech platform built with the MERN stack that enables instru
 **https://study-studs.vercel.app/**
 
 ---
+
+
+# 🏗 Architecture
+
+```text
+                React + TypeScript
+                       │
+                 REST APIs (Axios)
+                       │
+                Express + Node.js
+                       │
+      ┌────────────┬──────────────┐
+      │            │              │
+   MongoDB      Redis       Cloudinary
+(Database)     (Cache)     (Media)
+
+                 Razorpay
+                 (Payments)
+```
+
+---
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
