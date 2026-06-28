@@ -5,9 +5,7 @@
 </p>
 
 <p align="center">
-StudyStuds is a scalable full-stack EdTech platform where instructors can create and publish courses while students can browse, purchase and consume educational content.
-
-The application follows a modern client-server architecture with secure authentication, media storage, payment processing, analytics, caching and containerized deployment.</p>
+StudyStuds is a scalable full-stack EdTech platform where instructors can create and publish courses while students can browse, purchase and consume educational content. The application follows a modern client-server architecture with secure authentication, media storage, payment processing, analytics, caching and containerized deployment.</p>
 
 <p align="center">
 
